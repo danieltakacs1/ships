@@ -10,7 +10,7 @@ const doc = {
 
 const state = {
     host: 'http://localhost:8000/',
-    bikes: []
+    ships: []
 };
 
 window.addEventListener('load', () => {
@@ -37,7 +37,7 @@ function render() {
     var rows = '';
     state.ships.forEach( ship => {
         var row = `
-        <tr>
+        <tr class="color">
             <td>${ship.name}</td>
             <td>${ship.length}</td>
             <td>${ship.price}</td>
